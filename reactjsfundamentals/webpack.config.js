@@ -17,7 +17,7 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         inline: true,
-        hot: true,
+        // hot: true,
         progress: true,
         colors: true,
         open: true,
@@ -25,7 +25,7 @@ module.exports = {
         port: '3000'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        // new webpack.HotModuleReplacementPlugin(),
         new HTMLWebpackPlugin({
             title: 'React Fundamentals'
         })
