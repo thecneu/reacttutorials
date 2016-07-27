@@ -1,11 +1,18 @@
 import React from 'react';
-import ChecklistItem from './checklistItem';
 
-export default ({list}) => {
-    console.log(list);
-    return (
-        <ul>
+export default ({tasks}) => {
+	const list = tasks.map(task => (
+		<li key={task.id}>
+			<label>
+				<input type="checkbox" defaultChecked={task.done} />
+				{task.name}
+			</label>			
+		</li>
+	));
 
-        </ul>
-    );
+	return (
+		<ul>
+			{list}
+		</ul>
+	);
 }
