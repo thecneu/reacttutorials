@@ -1,9 +1,0 @@
-body {
-  font-family: sans-serif;
-}
-
-main {
-	width: 420px;
-	margin: 0 auto;	
-	transform: scale(2) translate(30%, 50%);
-}
