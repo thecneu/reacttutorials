@@ -1,0 +1,61 @@
+body {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(0 #ccc, 100% #000);
+}
+
+.kanban {
+	display: flex;
+}
+
+article {
+	flex: 1;
+	box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .42);
+	margin-right: 15px;
+	padding: 30px;
+	padding-top: 0;
+	background: #e3e3e3;
+}
+
+article header {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 30px;
+	padding-top: 8px;
+}
+
+article ul {
+	padding-left: 20px;
+}
+
+article li.active {
+	text-decoration: strike-through;
+}
+
+article .card {
+	margin-bottom: 30px;
+	background: white;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 4px 4px 21px -4px rgba(0, 0, 0, .23);
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+}
+
+input, button {
+	padding: 14px;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+

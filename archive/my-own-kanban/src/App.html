@@ -1,0 +1,45 @@
+Click add to cart btn
+	Fire ADD_TO_CART action - plu, itemid, quanity
+	Fire ADDING_TO_CART
+		Success fire ADDED_TO_CART plu, itemid
+		Failure fire FAILED_ADD_TO_CART plu, itemid
+	ADDED_TO_CART
+		Turn off loading
+
+{
+	addingToCard: {
+		
+		id,
+		plu,
+		quanity
+	}
+}
+
+<div class="kanban">
+	<article>
+		<header>
+			<h2>ToDo</h2>	
+		</header>
+		<section class="card">
+			<span>I need stuff</span>
+		</section>
+		<section class="card">
+			<ul>
+				<li>I need this stuff</li>
+				<li>And this stuff</li>
+			</ul>
+		</section>
+		<section class="card">
+			<span>Yes Yes</span>
+		</section>		
+	</article>
+	<article>
+		<h2>In progress</h2>
+	</article>
+	<article>
+		<h2>Completed</h2>
+	</article>
+	<footer>
+		<input type="text" placeholder="Add Item">
+	</footer>
+</div>
