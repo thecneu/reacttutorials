@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Thumb = ({index, children, onClick}) => (
+const Thumb = ({index, children, changeSelectedImage}) => (
     <div>
-        <img onClick={onClick} src={children} alt=""/>
+        <img onClick={changeSelectedImage} src={children} alt=""/>
     </div>
 );
 

@@ -7,7 +7,7 @@ const Thumbs = ({images, changeSelectedImage}) => (
         <Thumb
             key={i}
             index={i}
-            onClick={() => changeSelectedImage(i)}
+            changeSelectedImage={() => changeSelectedImage(image)}
         >
             {image}
         </Thumb>)}
